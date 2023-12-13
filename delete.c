@@ -19,7 +19,7 @@ int main()
     srand(time(NULL));
     for(int idx = 0; idx < size; idx++)
     {
-        array[idx] = rand()%10+1;
+        array[idx] = rand() % 10+1;
         printf("%d ",array[idx]);
     }
     printf("\n");
@@ -30,9 +30,12 @@ int main()
     {
         if(array[idx] != targeet)
         {
-            array[pos] = array[idx];
+            //原地 空间复杂度O(1)
+           // array[pos] = array[idx];
+            //pos++ ;
+            array[pos++] = array[idx];
             printf("%d ",array[idx]);
-            pos++ ;
+            
         }
       
     }
