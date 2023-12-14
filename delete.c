@@ -33,7 +33,7 @@ int main()
             //原地 空间复杂度O(1)
            // array[pos] = array[idx];
             //pos++ ;
-            array[pos++] = array[idx];
+            array[pos++] = array[idx];//优化
             printf("%d ",array[idx]);
             
         }
